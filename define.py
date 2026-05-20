@@ -17,11 +17,11 @@ def define():
     STAT_FONT = pygame.font.SysFont('comicsans',WIDTH//16)
     FPS_FONT = pygame.font.SysFont('comicsans',WIDTH//32)
     WINNER_FONT = pygame.font.SysFont('comicsans',WIDTH//8)
-    BULLET_HIT_SOUND = pygame.mixer.Sound('hit.mp3')
-    BULLET_FIRE_SOUND = pygame.mixer.Sound('fire.mp3')
-    BOUNCE_SOUND = pygame.mixer.Sound('bounce.mp3')
-    ROUND_SOUND = pygame.mixer.Sound('round.mp3')
-    SAGE_WALL = pygame.mixer.Sound('sage_wall.mp3')
+    BULLET_HIT_SOUND = pygame.mixer.Sound('hit.mp3.ogg')
+    BULLET_FIRE_SOUND = pygame.mixer.Sound('fire.mp3.ogg')
+    BOUNCE_SOUND = pygame.mixer.Sound('bounce.mp3.ogg')
+    ROUND_SOUND = pygame.mixer.Sound('round.mp3.ogg')
+    SAGE_WALL = pygame.mixer.Sound('sage_wall.mp3.ogg')
     FPS = 120
     _rand_ = random.randint(1,3)
     if _rand_ == 1:
@@ -32,11 +32,11 @@ def define():
         SPEED = 36000
     VEL = (WIDTH*HEIGHT)//(SPEED*2)
     if SPEED == 48000:
-        MUSIC = pygame.mixer.Sound('turtle.mp3')
+        MUSIC = pygame.mixer.Sound('turtle.mp3.ogg')
     if SPEED == 42000:
-        MUSIC = pygame.mixer.Sound('pacificrim.mp3')
+        MUSIC = pygame.mixer.Sound('pacificrim.mp3.ogg')
     if SPEED == 36000:
-        MUSIC = pygame.mixer.Sound('lastingpromise.mp3')
+        MUSIC = pygame.mixer.Sound('lastingpromise.mp3.ogg')
     BULLET_VEL = (WIDTH*HEIGHT)//(288000/4)
     MAX_BULLETS = 0
     YELLOW_HIT = pygame.USEREVENT + 1
