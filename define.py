@@ -22,7 +22,7 @@ def define():
     BOUNCE_SOUND = pygame.mixer.Sound('bounce.mp3.ogg')
     ROUND_SOUND = pygame.mixer.Sound('round.mp3.ogg')
     SAGE_WALL = pygame.mixer.Sound('sage_wall.mp3.ogg')
-    FPS = 120
+    FPS = 60
     _rand_ = random.randint(1,3)
     if _rand_ == 1:
         SPEED = 48000
